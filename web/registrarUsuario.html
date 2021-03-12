@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tienda online</title>
+
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="static/lib/adminlte-3.1.0-dist/plugins/fontawesome-free/css/all.min.css">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="static/lib/adminlte-3.1.0-dist/css/adminlte.min.css">
+        <!-- Google Font: Source Sans Pro -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+        <!-- sweetalert2  -->
+        <script src="static/lib/sweetalert2-9.10.0/sweetalert2.all.min.js"></script>
+        
+                <!-- jQuery -->
+        <script src="static/lib/jquery-3.3.1-dist/jquery.min.js"></script>
+        <!-- Bootstrap 4 -->
+        <script src="static/lib/bootstrap-4.1.3-dist/js/bootstrap.bundle.min.js"></script>
+        <!-- AdminLTE App -->
+        <script src="static/lib/adminlte-3.1.0-dist/js/adminlte.min.js"></script>
+
+        <script src="static/js/js_global.js"></script>
+    </head>
+    <body class="hold-transition">
+        <div class="">
+            <div class="login-logo">
+                <a href="index.html"><b>Tienda</b> Online</a>
+            </div>
+            <!-- /.login-logo -->
+            <div class="card card-default" style="margin-left: 10%; margin-right: 10%;">
+                <form method="post" action="." >
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="fas fa-plus"></i>
+                            Registro de usuario
+                        </h3>
+                    </div>
+
+                    <!-- /.card-header -->
+                    <div class="card-body">
+
+                        <div class="form-group">
+                            <label for="id_username">Username:</label>
+                            <input type="text" name="username" autofocus="" autocomplete="off" maxlength="150" placeholder="Ingrese su nombre de usuario" class="form-control" required="" id="id_username">
+                            
+                        </div>
+
+                        <div class="form-group">
+                             <label for="id_password">Password:</label>
+                            <input type="password" name="password" autocomplete="off" placeholder="Ingrese su contraseña" class="form-control" required="" id="id_password">   
+                        </div>
+
+                        <div class="form-group">
+                            <label for="id_nombres">Nombres:</label>
+                            <input type="text" name="nombres" class="form-control" placeholder="Ingrese el nombre de la empresa" maxlength="200" id="id_nombres">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="id_ruc_ced">Cedula:</label>
+                            <input type="text" name="ruc_ced" class="form-control" placeholder="Ingrese el nombre de la empresa" maxlength="200" id="id_ruc_ced">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="id_telefono">Telefono:</label>
+                            <input type="text" name="telefono" class="form-control" placeholder="Ingrese el nombre de la empresa" maxlength="200" id="id_telefono">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="id_email">Email:</label>
+                            <input type="text" name="email" class="form-control" placeholder="Ingrese el nombre de la empresa" maxlength="200" id="id_email">
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <button type="submit" class="btn btn-primary btn-flat">
+                            <i class="fas fa-save"></i>
+                            Guardar registro
+                        </button>
+
+                        <a href="index.html" class="btn btn-danger btn-flat">
+                            <i class="fas fa-times"></i>
+                            Cancelar
+                        </a>
+                    </div>
+                    <!-- /.card-body -->
+                </form>
+            </div>
+        </div>
+        <!-- /.login-box -->
+
+        <script src="static/js/functions.js"></script>
+
+        <script src="static/js/registrarusuario.js"></script>
+    </body>
+</html>
